@@ -2,13 +2,13 @@
 name: plainspeak
 version: 0.1.0
 description: |
-  Rewrite scientific, technical, and data-science prose into plain, precise
-  language. Use for docstrings, READMEs, methods/results/discussion sections,
-  abstracts, figure captions, model cards, data dictionaries, notebook
-  narration, commit messages, PR descriptions, and any technical prose that
-  needs AI tells removed without losing domain meaning. Trigger on "plainspeak",
-  "plain technical prose", "deslop technical writing", "make this less AI", or
-  similar requests.
+  Make scientific and technical writing clear. Plainspeak cuts the padding,
+  keeps the exact terms, numbers, and citations, and puts the claim first. The
+  same edits strip the signs of AI writing. Use for docstrings and API docs,
+  data-science notebooks, manuscript sections (methods, results, discussion,
+  abstracts), figure captions, READMEs, and data dictionaries. Trigger on
+  "plainspeak", "plain technical prose", "make this clearer", or "make this
+  less AI".
 license: MIT
 compatibility: claude-code opencode
 allowed-tools:
@@ -20,11 +20,13 @@ allowed-tools:
   - AskUserQuestion
 ---
 
-# Plainspeak: Plain, Precise Technical Prose
+# Plainspeak: Clear, Precise Technical Prose
 
-Strip AI tells from scientific, technical, and data-science writing without flattening domain terminology or forcing blog voice into reference text. The goal is prose that reads like a careful domain expert wrote it: direct claims, exact terms, no padding, no manufactured personality.
+Make scientific and technical writing clear. Plainspeak cuts the padding, keeps the exact terms and numbers, and puts the claim first. Cutting filler, choosing plain words over inflated ones, and breaking formulaic structure also strip the signs of AI writing, so clean prose comes out as a result, not as the aim.
 
-This is not general humanizing. For essays, opinion, and blog voice, use the broader `humanizer`/`deslop` skill. Plainspeak's contract is plain technical prose, and neutral *is* the correct human voice for reference text.
+Apply Orwell's test to every edit: keep the change only if the sentence comes out clearer and still correct.
+
+This is not general humanizing. For essays, opinion, and blog voice, use the broader `humanizer`/`deslop` skill. For technical and reference text, plain and neutral is the correct human voice.
 
 ## The contract
 
@@ -148,16 +150,16 @@ Read reference files by task size:
 
 - Short text (< 2 paragraphs) or a quick fix: the core rules above are enough.
 - Medium text or a standard request: read [references/phrases.md](references/phrases.md) + [references/structures.md](references/structures.md).
-- An artifact with conventions (docstring, model card, manuscript section, commit): also read [references/technical.md](references/technical.md).
+- An artifact with conventions (docstring, manuscript section, figure caption, data dictionary): also read [references/technical.md](references/technical.md).
 - A long or thorough edit: read all reference files, including [references/examples.md](references/examples.md).
 
 ## Reference files
 
 - [references/phrases.md](references/phrases.md): filler, AI vocabulary, the "serves as" dodge, jargon substitutes, formatting-phrase tells.
 - [references/structures.md](references/structures.md): negative parallelism, false ranges, fragmentation, anaphora, passive/actor guidance, diff-anchored writing.
-- [references/technical.md](references/technical.md): artifact-specific rules for docstrings, docs, manuscripts, model cards, data dictionaries, notebooks, commits, and PRs.
+- [references/technical.md](references/technical.md): artifact-specific rules for docstrings and API docs, READMEs, manuscript sections, figure captions, data dictionaries, and notebook narration.
 - [references/examples.md](references/examples.md): before/after examples organized by artifact type.
-- [references/sources.md](references/sources.md): attribution and principle summaries (humanizer/Wikipedia, deslop/tropes.fyi/stop-slop, Orwell, Google docs, Williams, NumPy/pandas, model cards, Tufte).
+- [references/sources.md](references/sources.md): attribution and principle summaries (humanizer/Wikipedia, deslop/tropes.fyi/stop-slop, Orwell, Google docs, Williams, NumPy/pandas, Tufte).
 
 ## Examples
 

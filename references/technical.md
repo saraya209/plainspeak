@@ -2,7 +2,7 @@
 
 Conventions for each technical artifact Plainspeak targets. Identify the artifact first, then apply its conventions on top of the general phrase and structure rules. When a general rule conflicts with a convention here, the convention wins (this is the core override applied to genre).
 
-The principle summaries behind these conventions (Google developer docs, NumPy/pandas, model cards, Tufte) are in [sources.md](sources.md).
+The principle summaries behind these conventions (Google developer docs, NumPy/pandas, Williams, Tufte) are in [sources.md](sources.md).
 
 ## Docstrings and API documentation
 
@@ -59,13 +59,6 @@ After: "Fill missing values using the given strategy ('mean', 'median', or 'most
 - No interpretive padding in the caption ("strikingly, the model excels"); let the reader read the figure.
 - Present tense, sentence fragments are acceptable and conventional for captions.
 
-## Model cards and dataset cards
-
-- Follow the transparent-disclosure structure: intended use, out-of-scope use, training data, evaluation, limitations, ethical considerations.
-- Limitations must be concrete and honest: name the populations, distributions, or conditions where the model underperforms. No "despite these limitations, the model performs well".
-- Report evaluation with the metric, the dataset, and the number. No vague "achieves strong performance".
-- Do not inflate intended use or downplay risk. The card's value is candor.
-
 ## Data dictionaries and dataset descriptions
 
 - One row per field: name, type, units, allowed values or range, and meaning. Be exact about units and encodings (is `temp` Celsius or Fahrenheit; is `missing` coded as NA, -999, or empty).
@@ -78,30 +71,3 @@ After: "Fill missing values using the given strategy ('mean', 'median', or 'most
 - No tutorial-voice signposting ("Now let's dive into the fun part!"). One line of context is usually enough.
 - Keep it honest about exploratory steps: "Quick check; not used downstream" beats dressing a scratch cell as a result.
 - Conclusions in a notebook still need the number and the caveat, not "the results look great".
-
-## Commit messages
-
-- Subject line: imperative mood, concise, no trailing period. "Fix off-by-one in horizon indexing".
-- Body (when the "why" is not obvious): explain the reason for the change and any consequence, wrapped prose. This is one place where describing the change is correct, not diff-anchored: commit messages are version-scoped by definition.
-- No AI attribution or "Co-Authored-By" lines (house rule).
-- Do not pad. If the change is self-explanatory, the subject line is enough.
-
-## PR descriptions
-
-- Lead with what the PR does and why, in one short paragraph. Then context, testing, and anything a reviewer must know.
-- Link issues and prior discussion instead of restating them.
-- No promotional framing ("this massively improves..."); state the measured effect if there is one.
-- Checklists and test notes are fine and useful; keep them concrete.
-
-## Changelogs, release notes, migration guides
-
-- These are legitimately version-scoped, so diff-anchored writing is correct here: describe what changed, what was added, removed, or deprecated.
-- Group by Added / Changed / Fixed / Removed (Keep a Changelog style) or the project's convention.
-- Be specific about breaking changes and the migration path. "Renamed `score()` to `weighted_interval_score()`; update call sites."
-- Past tense or imperative per the project's convention; stay consistent.
-
-## Code comments and inline documentation
-
-- Explain why, not what, when the code already shows what. "Clamp to avoid log(0)" beats "set x to epsilon".
-- Describe current intent, not history. Not "used to use a loop here"; that belongs in version control.
-- Keep TODO/FIXME/NOTE markers if the project uses them; they are signal, not slop.

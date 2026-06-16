@@ -54,10 +54,6 @@ The durable parts: omit needless words, prefer the specific to the general, put 
 
 Docstring section structure and reference-doc tone. NumPy-style docstrings (summary line, Parameters, Returns, with types carried by signatures) match the user's house style and the docstring rules in `technical.md`.
 
-### Hugging Face model cards and dataset datasheets (Mitchell et al.; Gebru et al.)
-
-Transparent disclosure of intended use, out-of-scope use, training data, evaluation, and limitations. Shapes the model-card and dataset-card conventions, especially the honest-limitations rule.
-
 ### Tufte, on graphical and caption discipline
 
 The caption reports the evidence rather than decorating it; text accompanying a figure should help the reader read the figure, not editorialize. Shapes the figure-caption conventions.
