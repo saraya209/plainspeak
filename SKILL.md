@@ -63,33 +63,59 @@ If the user provides a writing sample (their own previous writing), analyze it b
 - File: "Humanize this text. Use my writing style from [file path] as a reference."
 
 
+## ORWELL'S LENS
+
+The patterns below tell you what to cut. This tells you what to aim for. It comes from George Orwell's "Politics and the English Language" (1946): the enemy of clear writing is not bad grammar, it is vagueness dressed up as authority. Learn the sensibility; write in modern plain English. Do not copy his 1940s idiom or his examples.
+
+Six rules, paraphrased, as a working spine:
+
+1. Never use a metaphor, simile, or figure of speech you are used to seeing in print.
+2. Never use a long word where a short one will do.
+3. If it is possible to cut a word out, cut it out.
+4. Never use the passive where you can use the active (but see the methods-section exception under SCIENTIFIC AND TECHNICAL WRITING).
+5. Never use a foreign phrase, a scientific word, or a jargon word if you can think of an everyday English equivalent. (Real domain terms are the exception, not a violation; see below.)
+6. Break any of these rules sooner than say anything outright barbarous.
+
+Rule 6 is the override: clarity and correctness beat rule-following. Never mangle a sentence or change its meaning just to satisfy a rule.
+
+**What good prose looks like (aim for this, do not just avoid the tells):**
+
+- **Concrete over abstract.** Name the thing. "Sales fell 12%" beats "performance headwinds emerged."
+- **Short, plain words over Latinate ones.** Use, not utilize. Help, not facilitate. Show, not demonstrate.
+- **Call things by their names.** Plain words for hard facts: people were fired, not "the workforce was rightsized."
+- **Let a true statement stand.** It does not need "truly," "fundamentally," or a closing flourish about its broader significance.
+- **Say what you mean once.** If the sentence already lands, do not restate it in the next one.
+
+The test for any edit: does it make the sentence clearer and still true? If not, leave it.
+
+
 ## PERSONALITY AND SOUL
 
-Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as obvious as slop. Good writing has a human behind it.
+Plain and honest is the default. For most prose, and especially for encyclopedic, technical, scientific, legal, or reference text, neutral and plain *is* the correct human voice. Do not inject opinions, first person, or manufactured personality there. A clean, plain sentence is not "soulless"; it is the goal.
 
-**Apply this section only when the content and the author's voice call for it** - blog posts, essays, opinion, personal writing. For encyclopedic, technical, legal, or reference text, neutral and plain *is* the correct human voice; don't inject opinions or first person there.
+The exception: some writing genuinely calls for a human voice, and there a flat, evenly-paced wall of text reads as machine-made too. **Apply this section only when the content and the author's voice clearly call for it** - blog posts, essays, opinion, personal writing. When in doubt, stay plain.
 
-### Signs of soulless writing (even if technically "clean"):
-- Every sentence is the same length and structure
-- No opinions, just neutral reporting
-- No acknowledgment of uncertainty or mixed feelings
-- No first-person perspective when appropriate
-- No humor, no edge, no personality
-- Reads like a Wikipedia article or press release
+### In voice-genre writing, watch for a flat, machine-made feel:
+- Every sentence the same length and structure
+- An even, mid-length cadence with no variation
+- No acknowledgment of uncertainty or mixed feelings where the writer clearly has them
+- No first-person perspective in a piece that is plainly personal
 
-### How to add voice:
+For reference, technical, or encyclopedic text, none of these are defects: neutral reporting with no first person is exactly right there. This list applies only once you have decided the piece calls for a voice.
 
-**Have opinions.** Don't just report facts - react to them. "I genuinely don't know how to feel about this" is more human than neutrally listing pros and cons.
+### How to add voice (only when the genre calls for it):
 
-**Vary your rhythm.** Short punchy sentences. Then longer ones that take their time getting where they're going. Mix it up.
+**Vary the rhythm.** Mix short sentences with longer ones instead of an even cadence.
 
-**Let some mess in.** Perfect structure feels algorithmic. Tangents, asides, and half-formed thoughts are human.
+**Keep real uncertainty.** If the writer has mixed feelings, let them show rather than resolving everything into a clean take.
 
-### Before (clean but soulless):
+**Match the author, do not invent a persona.** Add the voice the content and author call for; do not manufacture opinions or a personality the text does not have.
+
+### Before (clean but flat, in a piece that wants a voice):
 > The experiment produced interesting results. The agents generated 3 million lines of code. Some developers were impressed while others were skeptical. The implications remain unclear.
 
-### After (has a pulse):
-> I genuinely don't know how to feel about this one. 3 million lines of code, generated while the humans presumably slept. Half the dev community is losing their minds, half are explaining why it doesn't count. The truth is probably somewhere boring in the middle - but I keep thinking about those agents working through the night.
+### After (has a voice):
+> I genuinely don't know how to feel about this one. 3 million lines of code, generated while the humans presumably slept. Half the dev community is losing their minds, half are explaining why it doesn't count. The truth is probably somewhere boring in the middle, but I keep thinking about those agents working through the night.
 
 
 ## CONTENT PATTERNS
