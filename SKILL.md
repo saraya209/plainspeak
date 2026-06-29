@@ -22,7 +22,7 @@ allowed-tools:
   - AskUserQuestion
 ---
 
-# Plainspeak: Remove AI Writing Patterns
+# Plainspeak
 
 **Humanizer meets Orwell: human voice, real meaning.**
 
@@ -84,7 +84,7 @@ Rule 6 is the override: clarity and correctness beat rule-following. Never mangl
 - **Short, plain words over Latinate ones.** Use, not utilize. Help, not facilitate. Show, not demonstrate.
 - **Call things by their names.** Plain words for hard facts: people were fired, not "the workforce was rightsized."
 - **Let a true statement stand.** It does not need "truly," "fundamentally," or a closing flourish about its broader significance.
-- **Say what you mean once.** If the sentence already lands, do not restate it in the next one.
+- **Say what you mean once.** If the sentence already lands, do not restate it in the next one. This holds for the whole piece, not just sentences: do not inflate the rewrite past the source's length by restating points or adding scaffolding. Breaking a dense block into paragraphs for readability is fine; padding it out is not.
 
 The test for any edit: does it make the sentence clearer and still true? If not, leave it.
 
@@ -122,7 +122,7 @@ For reference, technical, or encyclopedic text, none of these are defects: neutr
 
 Plainspeak is safe for scientific, technical, and data-science prose. The tells below still apply, but with a tolerance layer: do not strip precision in the name of plainness. Rule 6 governs here.
 
-- **Domain terms are precision, not jargon.** Keep the exact technical term when it carries methodological meaning (for example WIS, MCMC, posterior predictive check). Orwell's rule 5 targets needless jargon, not the real vocabulary of a field. Never flatten a precise term into a vague everyday word.
+- **Domain terms are precision, not jargon.** Keep the exact technical term when it carries methodological meaning (for example WIS, MCMC, posterior predictive check). Orwell's rule 5 targets needless jargon, not the real vocabulary of a field. Never flatten a precise term into a vague everyday word. If a noun phrase is an established term of art in the field, keep it verbatim rather than paraphrasing it into a plainer phrase; when unsure whether a phrase is a term of art, keep it.
 - **Passive voice is conventional in methods.** "Samples were incubated", "Reads were aligned with BWA-MEM" should stay passive. Flag passive only when it hides an actor in results or discussion.
 - **Keep the numbers exactly.** Preserve figures, confidence intervals, p-values, units, sample sizes, software versions, dataset names, and citations unless the user asks for substantive editing.
 - **Name specific sources.** Prefer a named author, dataset, model, or metric over "researchers have shown" or "studies suggest". This is the fix for vague attribution, not an exception to it.
@@ -371,7 +371,7 @@ Before returning the final rewrite, scan it for `—` and `–`. Any hit means t
 
 ### 19. Curly Quotation Marks
 
-**Problem:** ChatGPT uses curly quotes (“...”) instead of straight quotes ("...").
+**Problem:** Some AI models output curly quotes (“...”) instead of straight quotes ("...").
 
 **Before:**
 > He said “the project is on track” but others disagreed.
@@ -576,7 +576,7 @@ A clean human writer can hit several of the patterns above without any AI involv
 - **Mixed casual and formal registers.** This often signals a person in a technical field, a young writer, or someone with neurodivergent prose habits — not a chatbot.
 - **"Bland" or "robotic" prose.** AI prose has *specific* tells. Generic dryness without those tells is just dry writing.
 - **Formal or academic vocabulary.** AI overuses *specific* fancy words (see §7), not all fancy words. Don't flatten "ostensibly" or "constituent" just because they sound brainy.
-- **Letter-style opening or closing on a comment.** Salutations and sign-offs predate ChatGPT by centuries.
+- **Letter-style opening or closing on a comment.** Salutations and sign-offs predate AI chatbots by centuries.
 - **Common transition words in isolation.** *Additionally*, *moreover*, *consequently* are AI-coded only when piled up. One *however* is not a tell.
 - **Curly quotes alone.** macOS, Word, Google Docs, and most CMSes auto-curl by default. Curly quotes only count when stacked with other tells.
 - **Em dashes alone.** Many editors and journalists use them often. Em dashes are evidence only when paired with formulaic sales-y rhythm.
@@ -598,7 +598,7 @@ When you see these, lean toward leaving the prose alone — they are evidence of
 - **First-person editorial choices the writer can defend.** If the writer can explain *why* they made a particular cut or used a particular word, that's a strong human signal.
 - **Variety in sentence length.** Real writing alternates short and long. AI writing tends toward an even, mid-length cadence.
 - **Genuine asides, parentheticals, or self-corrections.** "(I keep wanting to say 'almost' here, but it really was certain.)" Models rarely interrupt themselves like this.
-- **Edits made before November 30, 2022.** ChatGPT's public launch. Anything older than that is, with very rare exceptions, not AI-written.
+- **Edits made before November 30, 2022.** The public launch of the first widely-used AI chatbot. Anything older than that is, with very rare exceptions, not AI-written.
 
 
 ---
@@ -662,6 +662,4 @@ Deliver the draft, the brief "still-AI" bullets, the final rewrite, and (optiona
 
 ## Reference
 
-This skill is based on [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup. The patterns documented there come from observations of thousands of instances of AI-generated text on Wikipedia.
-
-Key insight from Wikipedia: "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
+Plainspeak is a fork of [blader/humanizer](https://github.com/blader/humanizer), whose pattern catalog is based on [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) (maintained by WikiProject AI Cleanup). The plainness and honesty come from George Orwell's "Politics and the English Language" (1946). See README.md for full credits.
